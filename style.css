@@ -17,6 +17,10 @@ body {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 .bloco {
   display: flex;
   flex-direction: column;
@@ -42,11 +46,14 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  cursor: pointer;
 }
 
 .link {
+  position: relative;
+  width: 60px;
+  height: 60px;
   list-style: none;
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
@@ -55,5 +62,52 @@ body {
 }
 
 .logo {
-  width: 60px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.disc_animation {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.icon_disc_animation {
+  transition: transform 0.3s ease;
+}
+
+.disc_name {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scaleX(0); /* começa escondido */
+  transform-origin: left; /* expansão da esquerda */
+  background-color: #5865f2;
+  color: white;
+  padding: 21px 15px 21px 34px;
+  border-radius: 50px;
+  white-space: nowrap;
+  opacity: 0;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  pointer-events: none;
+  z-index: -1;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  display: flex;
+}
+
+.disc_animation:hover .icon_disc_animation {
+  transform: rotate(360deg);
+}
+
+.disc_animation:hover .disc_name {
+  transform: translateY(-50%) scaleX(1);
+  opacity: 1;
+  left: 30px;
+  max-width: 200px;
+  border-radius: 0px 50px 50px 0px;
 }
