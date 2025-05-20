@@ -29,8 +29,10 @@ a {
 }
 
 .icon {
-  width: 120px;
+  width: 140px;
   border-radius: 100%;
+  background: white;
+  box-shadow: 0 0 20px white;
 }
 
 .title {
@@ -79,7 +81,7 @@ a {
   transition: transform 0.3s ease;
 }
 
-.disc_name {
+.discordName {
   position: absolute;
   left: 0;
   top: 50%;
@@ -87,14 +89,13 @@ a {
   transform-origin: left; /* expansão da esquerda */
   background-color: #5865f2;
   color: white;
-  padding: 21px 15px 21px 34px;
+  padding: 22px 20px 22px 34px;
   border-radius: 50px;
   white-space: nowrap;
   opacity: 0;
   font-family: sans-serif;
   font-weight: 500;
   font-size: 14px;
-  pointer-events: none;
   z-index: -1;
   transition: transform 0.4s ease, opacity 0.4s ease;
   display: flex;
@@ -104,10 +105,29 @@ a {
   transform: rotate(360deg);
 }
 
-.disc_animation:hover .disc_name {
+.disc_animation:hover .discordName {
   transform: translateY(-50%) scaleX(1);
   opacity: 1;
   left: 30px;
   max-width: 200px;
   border-radius: 0px 50px 50px 0px;
+}
+
+.copied-msg {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 12px;
+  background: #333;
+  padding: 2px 6px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  opacity: 1;
 }
