@@ -6,7 +6,7 @@ Bem-vindo ao repositório do meu site pessoal! 🌐
 
 Este é o código-fonte do meu site pessoal, hospedado no [Vercel](https://vercel.com/home). 
 
-![image](./assets/image.png)
+
 
 ## Tecnologias Utilizadas
 
