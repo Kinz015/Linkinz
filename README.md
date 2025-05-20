@@ -30,7 +30,7 @@ Este é o código-fonte do meu site pessoal, hospedado no [Vercel](https://verce
 
 Este é um projeto pessoal, mas estou aberto a sugestões e melhorias. Fique à vontade para abrir uma issue ou enviar um pull request.
 
-## Clique [aqui]("https://kinz015.github.io/Linkinz/") para acessar meu site
+## Clique [aqui](https://kinz015.github.io/Linkinz/) para acessar meu site
 
 ---
 
